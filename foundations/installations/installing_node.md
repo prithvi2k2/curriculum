@@ -42,7 +42,7 @@ You can verify `nvm` is installed by running the command:
 
 
 ~~~BASH
-command -v nvm
+command nvm -v
 ~~~
 
 if this returns `nvm: command not found` close the terminal and re-open it.
@@ -60,17 +60,21 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 touch ~/.zshrc
 ~~~
 
+Open it by typing the following command :
+
+~~~bash
+nano ~/.zshrc
+~~~
 
 
-Paste the following in your terminal and press enter: 
+Paste the following : 
 
 ~~~bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ~~~
-
-Press Enter.
+Now save your changes by typing `ctrl +o` Hit return to save. Then exit Nano by typing `ctrl+x`
 
             
 
