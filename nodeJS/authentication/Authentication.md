@@ -1,4 +1,4 @@
-Creating users and allowing them to log in and out of your web apps is a crucial functionality that we are finally ready to learn! There is quite a bit of setup involved here, but thankfully none of it is too tricky. You'll be up and running in no time! In this lesson, we're going to be using [passportJS](http://www.passportjs.org) an excellent middleware to handle our authentication and sessions for us.
+Creating users and allowing them to log in and out of your web apps is a crucial functionality that we are finally ready to learn! There is quite a bit of setup involved here, but thankfully none of it is too tricky. You'll be up and running in no time! In this lesson, we're going to be using [passportJS](https://www.passportjs.org) an excellent middleware to handle our authentication and sessions for us.
 
 We're going to be building a very minimal express app that will allow users to sign up, log in, and log out. For now, we're just going to keep everything except the views in one file to make for easier demonstration, but in a real-world project, it is best practice to split our concerns and functionality into separate modules.
 
@@ -23,7 +23,7 @@ By the end of this lesson, you should be able to do the following:
 
 ### Set Up
 
-We're going to be using another Mongo database, so before we begin login to your mongo provider and create a new database and save its URL string somewhere handy.
+We're going to be using another Mongo database, so before we begin log in to your mongo provider and create a new database and save its URL string somewhere handy.
 
 To begin, let's set up a very minimal express app with a single MongoDB model for our users. Create a new directory and use `npm init` to start the package.json file then run the following to install all the dependencies we need:
 
@@ -133,7 +133,7 @@ app.post("/sign-up", (req, res, next) => {
   }).save(err => {
     if (err) { 
       return next(err);
-    };
+    }
     res.redirect("/");
   });
 });
@@ -143,7 +143,7 @@ Let's reiterate: this is not a particularly safe way to create users in your dat
 
 ### Authentication
 
-Now that we have the ability to put users in our database, let's allow them to log-in to see a special message on our home page! We're going to step through the process one piece at a time, but first, take a minute to glance at the [passportJS website](http://www.passportjs.org/docs/username-password/) the documentation here has pretty much everything you need to get set up. You're going to want to refer back to this when you're working on your project.
+Now that we have the ability to put users in our database, let's allow them to log-in to see a special message on our home page! We're going to step through the process one piece at a time, but first, take a minute to glance at the [passportJS website](http://www.passportjs.org/) the documentation here has pretty much everything you need to get set up. You're going to want to refer back to this when you're working on your project.
 
 PassportJS uses what they call _Strategies_ to authenticate users. They have over 500 of these strategies, but we're going to focus on the most basic (and most common), the username-and-password, or what they call the `LocalStrategy` [(documentation here)](http://www.passportjs.org/docs/username-password/). We have already installed and required the appropriate modules so let's set it up!
 
@@ -156,7 +156,7 @@ passport.use(
     User.findOne({ username: username }, (err, user) => {
       if (err) { 
         return done(err);
-      };
+      }
       if (!user) {
         return done(null, false, { message: "Incorrect username" });
       }

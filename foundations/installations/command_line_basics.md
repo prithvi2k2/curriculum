@@ -36,7 +36,7 @@ By the end of this lesson, you should be able to do the following:
 ### Assignment
 <div class="lesson-content__panel" markdown="1">
 
-**Note**: Many of these resources assume you're using a Mac or Linux environment. If you did our previous installation lesson, you should already have Linux installed in dual-boot, a virtual machine, or Windows Subsystem for Linux. Or, you might be using MacOS. If you don't have MacOS, or any version of Linux installed, please return to the [operating system installation guide](https://www.theodinproject.com/courses/foundations/lessons/prerequisites).
+**Note**: Many of these resources assume you're using a Mac or Linux environment. If you did our previous installation lesson, you should already have Linux installed in dual-boot or a virtual machine. Or, you might be using MacOS. If you don't have MacOS, or any version of Linux installed, please return to the [operating system installation guide](https://www.theodinproject.com/courses/foundations/lessons/prerequisites).
 
   1. Before diving into the command line lesson, you'll want to know how to create a file. You can do so with the `touch` command. Open your terminal and enter `ls` (the `l` is a lowercase `L`). `ls` will show you the files and folders in the current directory (or will show nothing if the current directory is empty). Create a file called `test.txt` by entering this in your terminal: `touch test.txt`. Now enter `ls` once again. You should see `test.txt` listed in the output. You can also create more than one file at once using the `touch` command. Enter `touch index.html script.js style.css` and press the enter. Then enter `ls` once more. You should see the files in the output. Here is a small way that the terminal reveals its power. How long would it have taken to create all three of those files with your mouse? Thanks, terminal.
   2. Read through [chapter 1 of Conquering the Command Line](http://conqueringthecommandline.com/book/basics).
@@ -90,82 +90,16 @@ This section contains helpful links to other content. It isn't required, so cons
 * [Video Series from LearnLinuxTv](https://www.youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ) contains 24 videos explaining the basics of the command line. Videos are brief enough for beginners but, at the same time, are detailed enough to get started and light your inner curiosity.
 
 ### Knowledge Check
-This section contains questions for you to check your understanding of this lesson. If you're having trouble answering the questions below on your own, clicking the small arrow to the left of the question will reveal the answers.
+This section contains questions for you to check your understanding of this lesson. If you’re having trouble answering the questions below on your own, review the material above to find the answer.
 
-<details>
-<summary>What is the command line?</summary>
-<ul><ul>
-  <li>The command line is a way to interact with the computer using specific words called "commands".</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How do you open the command line on your computer?</summary>
-<ul><ul>
-  <li>On Linux: Open the programs menu and search for "Terminal". You can also open the terminal by pressing <code>CTRL</code> + <code>ALT</code> + <code>T</code>.</li>
-  <li>On Mac: Open your applications folder and find "Terminal".</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How can you navigate to a particular directory?</summary>
-<ul><ul>
-  <li>You can use the <code>cd</code> command to change directories.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>Where will <code>cd</code> on its own navigate you to?</summary>
-<ul><ul>
-  <li>On Linux and Mac, it will navigate you home.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>Where will <code>cd ..</code> navigate you to?</summary>
-<ul><ul>
-  <li>It will navigate you "up" one folder, that is, into the parent of the current directory.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How do you display the name of the directory you are currently in?</summary>
-<ul><ul>
-  <li>On Linux and Mac, use the <code>pwd</code> (print working directory) command.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How do you display the contents of the directory you are currently in?</summary>
-<ul><ul>
-  <li>On Linux and Mac, use the <code>ls</code> command. Use <code>ls -l</code> to display the files in a list.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How do you create a new directory?</summary>
-<ul><ul>
-  <li>You can do this using the <code>mkdir</code> command.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How do you create a new file?</summary>
-<ul><ul>
-  <li>On Linux and Mac, use the <code>touch</code> command, e.g., <code>touch new-file.txt</code>.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How do you destroy a directory or file?</summary>
-<ul><ul>
-  <li>On Linux and Mac, use the <code>rm</code> command. To destroy folders, use <code>rm -r</code> or <code>rmdir</code>.</li>
-</ul></ul>
-</details>
-
-<details>
-<summary>How do you rename a directory or file?</summary>
-<ul><ul>
-  <li>On Linux and Mac, use the <code>mv</code> command, e.g., <code>mv folder/old-file.txt folder/new-file.txt</code>.</li>
-</ul></ul>
-</details>
+* What is the command line?
+* How do you open the command line on your computer?
+* How can you navigate to a particular directory?
+* Where will `cd` on its own navigate you to?
+* Where will `cd ..` navigate you to?
+* How do you display the name of the directory you are currently in?
+* How do you display the contents of the directory you are currently in?
+* How do you create a new directory?
+* How do you create a new file?
+* How do you destroy a directory or file?
+* How do you rename a directory or file?

@@ -221,7 +221,7 @@ const messageChannel = consumer.subscriptions.create("MessageChannel", {
 });
 ~~~
 
-Yours will have some comments that aren't important. What we need to do here first is set an event listener on the form submit so we can grab the value entered. Once we have the value, we want to send it to the server to be broadcast to all the channel subscribers. This is called rebroadcasting and you can see how it works [In the Rails Guides](https://guides.rubyonrails.org/action_cable_overview.html#rebroadcasting-a-message). We can use `MessageChannel.send` to send the value entered in the input box to our websocket server.
+Yours will have some comments that aren't important, but you will need to verify that the constant `messageChannel` is declared. What we need to do here first is set an event listener on the form submit so we can grab the value entered. Once we have the value, we want to send it to the server to be broadcast to all the channel subscribers. This is called rebroadcasting and you can see how it works [In the Rails Guides](https://guides.rubyonrails.org/action_cable_overview.html#rebroadcasting-a-message). We can use `MessageChannel.send` to send the value entered in the input box to our websocket server.
 
 Right at the bottom of our `message_channel.js` file add the following code
 
@@ -369,7 +369,7 @@ end
 Then in our hangouts index view we can change the form to use `form_with`. You don't need to change anything else, just remove the form inside of the div with the `message-form` id
 
 ~~~html
-<%= form_with model: @message do |f| %>
+<%= form_with model: @message, local: false do |f| %>
   <div class="field has-addons">
     <div class="control">
       <%= f.text_field :body, id: 'message-input', class: 'input' %>
@@ -386,7 +386,6 @@ If you try and submit a message now it will still work. That's because in our `m
 ~~~js
 document.addEventListener("turbolinks:load", () => {
   let form = document.querySelector('#message-form')
-  console.log(form)
   if(form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault()

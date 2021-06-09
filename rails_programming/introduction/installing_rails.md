@@ -11,7 +11,7 @@ Before continuing, let's review a few best practices to keep in mind:
 * Copy and paste the commands to avoid typos.
 * If you stop working on this project partway through and come back to it later, be sure to use `cd` to move back inside your project directory so that the commands will work.
 
-In this project, we're going to build a fully functional Rails application. The entire point of this exercise is to make sure that you have everything installed and working correctly on your computer. Do *not* worry if you don't fully understand what you're doing. You'll learn exactly what all of these commands are doing later on in the course. For now, go slowly, and be sure to follow **each and every** step closely. If you run into trouble, don't forget that you can always reach out for help on [Discord](https://discord.gg/hvqVr6d). You can also use the [Discord search function](https://support.discordapp.com/hc/en-us/articles/115000468588-Using-Search) to check if someone else had a similar problem and how they solved it.
+In this project, we're going to build a fully functional Rails application. The entire point of this exercise is to make sure that you have everything installed and working correctly on your computer. Do *not* worry if you don't fully understand what you're doing. You'll learn exactly what all of these commands are doing later on in the course. For now, go slowly, and be sure to follow **each and every** step closely. If you run into trouble, don't forget that you can always reach out for help on [Discord](https://discord.gg/fbFCkYabZB). You can also use the [Discord search function](https://support.discordapp.com/hc/en-us/articles/115000468588-Using-Search) to check if someone else had a similar problem and how they solved it.
 
 **Reminder**: In this lesson you'll see shaded boxes that contain text like the one below.
 
@@ -173,7 +173,7 @@ git commit -m "initial commit"
 
 At this point, we have our files on our own computer and can track changes made to our files over time. But what if we want to share the files with another computer or have multiple people work on the same project? For this functionality, we need a GitHub repository.
 
-First, open [GitHub.com](https://github.com/) in your browser and sign in (if you aren't already). Next, look for your profile picture in the upper right-hand corner, click the "+" symbol next to it, and then click `New repository`. Give the repository a name (maybe `my_first_rails_app`?), and make sure you **do not** initialise the repository with a README and Rails created one already. Click `Create Repository`.
+First, open [GitHub.com](https://github.com/) in your browser and sign in (if you aren't already). Next, look for your profile picture in the upper right-hand corner, click the "+" symbol next to it, and then click `New repository`. Give the repository a name (maybe `my_first_rails_app`?), and make sure you **do not** initialise the repository with a README because Rails has created one already. Click `Create Repository`.
 
 On the next page, you'll see a bunch of commands listed. We're really only interested in the SSH URL at the top, so double check that `SSH` has been selected and then copy the URL.
 
@@ -194,7 +194,7 @@ A message from GitHub stating, "The authenticity of host 'github.com'..." may ap
 
 After the terminal finishes its magic, return to your GitHub repository and refresh the page. You should see a lot of files, starting with a folder called "app".
 
-This marks the start of your Odin journey! Later on, you'll be able to look back at this repository and marvel over how far you've come!
+This marks the start of your Rails journey! Later on, you'll be able to look back at this repository and marvel over how far you've come!
 
 ### Step 3: Deploy Your Rails Application
 
@@ -351,7 +351,7 @@ heroku run rails db:migrate
 
 You might see some strange output, but as long as you do not have an error, you have successfully deployed a Rails application!
 
-If you have an error, come to our [chat room](https://discord.gg/hvqVr6d), and ask for help. Be sure to include the entire output from your terminal when you ask your question.
+If you have an error, come to our [chat room](https://discord.gg/fbFCkYabZB), and ask for help. Be sure to include the entire output from your terminal when you ask your question.
 
 #### Step 3.6: Visit Your New Application
 

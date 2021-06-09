@@ -17,7 +17,7 @@ Your motivation could be a combination of these reasons or something else entire
 
 To give your motivation a bit of a boost, you can read about the success of others:
 
-* [A woman who taught herself enough to land a job in 5 months](https://newcodegirl.blogspot.com/)
+* [A woman who taught herself enough to land a job in 5 months](https://newcodegirl.blogspot.com/2015/04/i-made-it-job-contract-signed.html)
 * [A 32 year old who taught himself programming using The Odin Project over a year and landed a job](https://www.reddit.com/r/learnprogramming/comments/34r807/im_32_years_old_and_just_started_my_first/?)
 
 
@@ -68,7 +68,7 @@ You will inevitably get stuck at some point in the curriculum, perhaps due to a 
 
 * Google it: You can be certain someone else out there has encountered the same problem as you at some point. A quick Google search can often lead to a solution.
 * Take a break: Allow your diffuse learning state to work on the problem.
-* Ask for help in our [chat](https://discord.gg/hvqVr6d): Come prepared with your research. People will be more willing to help you when they can see you have already put effort into trying to figure out the solution on your own.
+* Ask for help in our [chat](https://discord.gg/fbFCkYabZB): Come prepared with your research. People will be more willing to help you when they can see you have already put effort into trying to figure out the solution on your own.
 
 ### Managing Your Study Time
 

@@ -2,7 +2,7 @@
 
 If you are already using **MacOS**, **Ubuntu**, or [an official flavor of Ubuntu](https://wiki.ubuntu.com/UbuntuFlavors), you can skip this section. Otherwise, click on the small arrow to the left of the method you would like to use below to expand that section, and then follow the installation instructions.
 
-**Please Note**: We can only support the operating systems indicated above. Our instructions have been tested with MacOS, Ubuntu, and official flavors of Ubuntu. We do not recommend installing an OS that is based on Ubuntu.
+**Please Note**: We can only support the operating systems indicated above. Our instructions have been tested with MacOS, Ubuntu, and official flavors of Ubuntu. We do not recommend installing an OS that is only based on Ubuntu (like Mint, Pop!_OS, ElementaryOS, etc).
 
 ### Setup
 
@@ -30,7 +30,7 @@ Once you have completed these instructions, **you are expected to work entirely 
 
 #### Step 1.2: Download Xubuntu
 
-There are thousands of distributions of Linux out there, but Ubuntu is undoubtedly one of the most popular and user friendly. When installing Linux on a VM, we recommend [downloading Xubuntu 18.04](https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/18.04/release/xubuntu-18.04.5-desktop-amd64.iso "Xubuntu Download Link"). Xubuntu uses the same base software as Ubuntu but has a desktop environment that requires fewer computer resources and is therefore ideal for virtual machines.
+There are thousands of distributions of Linux out there, but Ubuntu is undoubtedly one of the most popular and user friendly. When installing Linux on a VM, we recommend [downloading Xubuntu 20.04](https://mirror.us.leaseweb.net/ubuntu-cdimage/xubuntu/releases/20.04/release/xubuntu-20.04.2.0-desktop-amd64.iso). Xubuntu uses the same base software as Ubuntu but has a desktop environment that requires fewer computer resources and is therefore ideal for virtual machines.
 
 ### Step 2: Install VirtualBox and set up Xubuntu
 
@@ -116,13 +116,13 @@ While your VM is running, do the following steps:
   8. Type `Y` when it asks you to and let it finish installing. Close the terminal when it is finished.
   9. Click **Devices** on the VM toolbar -> **Insert Guest additions CD image** in the menu bar.
   10. Wait for the CD image to mount, it will show the CD on the desktop as solid, not transparent, and a window will show on the top right of the VM screen saying it was successfully mounted.
-  11. Double-click on the CD icon on the VM desktop.
+  11. If you see a File Manager window appear, then confirm the presence of a file named `VBoxLinuxAdditions.run` before proceeding to step 12. But if you do _not_ see a File Manager window appear, then navigate to the desktop by minimizing all opened windows, and then double-click on the CD icon on the VM desktop.
   12. In the new window that opens, right click on the white-space or any file/folder, and click **Open Terminal Here**.
   13. In the newly opened terminal window, paste `sudo ./VBoxLinuxAdditions.run` and hit enter.
   14. Once it finishes, close the terminal and the CD folder.
   15. Right-click CD on the VM desktop and click **Eject Volume**. It will not eject if the CD folder is open.
   16. Reboot your VM (which you can do by typing `reboot` and hitting enter in a terminal).
-  17. You can now maximize the VM window, use the shared clipboard, and create additional displays, among many other useful features. These options are available on the VM toolbar under **View** and **Device**.
+  17. You can now maximize the VM window, create additional displays, and use many other useful features. These options are available on the VM toolbar under **View** and **Device**.
   
   **NOTE**: 
 
@@ -157,7 +157,7 @@ Dual-booting provides two operating systems on your computer that you can switch
 
 ### Step 1: Download Ubuntu
 
-First, you need to download the version of Ubuntu you want to install on your computer. Ubuntu comes in different versions ("flavors"), but we suggest the standard [Ubuntu](https://releases.ubuntu.com/18.04/). If you're using an older computer, we recommend [Xubuntu](https://xubuntu.org/). Be sure to download the 64-bit version of [Ubuntu](https://releases.ubuntu.com/18.04/) or [Xubuntu](http://cdimage.ubuntu.com/xubuntu/releases/18.04/release/xubuntu-18.04.5-desktop-amd64.iso).
+First, you need to download the version of Ubuntu you want to install on your computer. Ubuntu comes in different versions ("flavors"), but we suggest the standard [Ubuntu](https://releases.ubuntu.com/20.04/). If you're using an older computer, we recommend [Xubuntu](https://xubuntu.org/release/20-04/). Be sure to download the 64-bit version of [Ubuntu](https://releases.ubuntu.com/20.04/) or [Xubuntu](https://xubuntu.org/release/20-04/).
 
 ### Step 2: Create a Bootable Flash Drive
 
